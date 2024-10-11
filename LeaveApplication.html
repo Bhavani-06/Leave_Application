@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application Form</title>
+    <link rel="stylesheet" href="LeaveLetter.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #2C3E50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Leave Application Form</h1>
+    <form action="admin.html" method="POST">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" value="" readonly style="background-color: #f0f0f0;"><br><br>
+
+        <label for="name">Applicant Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="authority">Authority:</label>
+        <select id="authority" name="authority" required>
+            <option value="Principal">Principal</option>
+            <option value="HOD">HOD</option>
+            <option value="Professor">Professor</option>
+            <option value="Associate Professor">Associate Professor</option>
+            <option value="Assistant Professor">Assistant Professor</option>
+            <option value="Assistant">Assistant</option>
+        </select><br><br>
+
+        <label for="reason">Leave Applying For:</label>
+        <textarea id="reason" name="reason" required></textarea><br><br>
+
+        <label for="startDate">Leave Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required><br><br>
+
+        <label for="endDate">Leave End Date:</label>
+        <input type="date" id="endDate" name="endDate" required><br><br>
+
+        <button type="submit">Apply</button>
+    </form>
+
+    <script>
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('date').value = today;
+    </script>
+</body>
+</html>
