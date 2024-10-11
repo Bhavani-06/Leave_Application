@@ -1,0 +1,38 @@
+body {
+    background-color: #ECF0F1; /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+
+form {
+    background-color: #FFFFFF; /* White background for the form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #BDC3C7;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #2980B9; /* Button color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3498DB; /* Button hover color */
+}
